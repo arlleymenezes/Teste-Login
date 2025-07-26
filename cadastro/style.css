@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+  margin: 0;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+#background{
+  width: 100vw;
+  height: 100vh;
+  background-color: #EEEEEE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.area-cadastro{
+  border: 1px solid #3D9DB3;
+  border-radius: 10px;
+  background-color: #F6F6F6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 30vw;
+  height: 50vh;
+  padding: 20px 40px;
+}
+
+.topo{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.topo > h1{
+  margin: 0;
+  font-size: 1.5em;
+  color: #3D9DB3;
+}
+
+.topo > .linha{
+  width: 100%;
+  height: 1px;
+  background-color: #3D9DB3;
+}
+
+.textfield{
+  display: flex;
+  width: 100%;
+  height: 70%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.textfield > label{
+  padding-top: 6px;
+  font-size: 0.9em;
+  color: #3D9DB3;
+}
+
+.textfield > input{
+  box-sizing: border-box;
+  width: 100%;
+  height: 13%;
+  padding-left: 10px;
+  border: 1px solid #C2C2C2;
+  border-radius: 5px;
+  outline: none;
+}
+
+.textfield > input::placeholder{
+  font-style: italic;
+  color: #C2C2C2;
+}
+
+.textfield > button{
+  width: 100%;
+  height: 13%;
+  margin-top: 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3D9DB3;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.area-cadastro > a{
+  color: #3D9DB3;
+  font-size: 1em;
+  text-decoration: none;
+  align-self: flex-start;
+  cursor: pointer;
+}
+
+@media (max-width: 1040px){
+  .area-cadastro{
+    width: 60vw;
+  }
+}
+
+@media (max-width: 545px){
+  body{
+    overflow: hidden;
+  }
+
+  .area-cadastro{
+    width: 75vw;
+  }
+}
